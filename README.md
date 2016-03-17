@@ -1,3 +1,5 @@
+# Default homepage template
+
 ### HTML file I used
 one-page/op-parallax-light-image-fullwidth.html
 
