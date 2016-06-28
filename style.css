@@ -9622,7 +9622,7 @@ body:not(.device-touch) .clients-grid li a {
 
 .team-desc.team-desc-bg {
 	background-color: #FFF;
-	padding: 10px 0 30px;
+	/*padding: 10px 0 30px;*/
 }
 
 .team .si-share {
