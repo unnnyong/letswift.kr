@@ -266,6 +266,12 @@ body.side-push-panel.side-panel-open.stretched #header .container { right: 300px
 	bottom: 20px;
 }
 
+.team-specifics {
+	position: absolute;
+	width: 100%;
+	top: 10px;
+}
+
 .dark .team-overlay:before { background-color: rgba(0,0,0,0.9); }
 
 .parallax .fslider * { -webkit-backface-visibility: hidden !important; }
