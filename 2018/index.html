@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="letswift" />
+	<meta property="og:image" content="http://www.letswift.kr/2017/images/letswift-cover.png"/>
+	<meta property="og:url" content="http://www.letswift.kr/2017/"/>
+	<meta property="og:title" content="도전하는 개발자를 위한 스위프트 컨퍼런스: Let'Swift">
+	<meta property="og:description" content="WWDC 애플 개발자 컨퍼런스만큼 재밌는 스위프트 컨퍼런스. 9월 23일(토)에 열립니다!"/>
+	<meta name=description content="Swift는 오픈소스 프로젝트로, 전세계 개발자가 함께 만들어가는 언어입니다. iOS 개발자들만 사용해야 하는건 아닙니다. 더 많은 플랫폼에서 더 다양한 활용방식을 함께 찾아보시죠!">
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/onepage.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/et-line.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/fonts.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+	<style type="text/css">
+	a, h4 > span:not(.nocolor) {	color: #D251A1; }
+	a:hover { color: #9A54A2; }
+	.before-heading {font-size: 22px;}
+	.emphasis-title { margin:0 0 25px; }
+	#primary-menu > ul > li:hover a, #primary-menu > ul > li.current a {
+    color: #D251A1;
+  }
+
+	#primary-menu ul li a {
+		font-size: 14px;
+		font-weight: 600;
+	}
+	.page-section {
+    padding: 80px 0;
+	}
+	.overlay {
+	   background:transparent; 
+	   position:relative; 
+	   width:100%;
+	   height:450px; /* your iframe height */
+	   top:450px;  /* your iframe height */
+	   margin-top:-450px;  /* your iframe height */
+	}
+	</style>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-79004702-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	<!-- Document Title
+	============================================= -->
+	<title>Let'Swift : 스위프트 컨퍼런스</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="full-header transparent-header static-sticky" data-sticky-offset="0">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="index.html" class="standard-logo"><img src="images/letswift.png" alt="Let'Swift Logo"></a>
+						<a href="index.html" class="retina-logo"><img src="images/letswift@2x.png" alt="Let'Swift Logo"></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu">
+
+						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+							<li><a href="#" data-href="#wrapper"><div>Home</div></a></li>
+							<li><a href="#" data-href="#section-about"><div>About</div></a></li>
+							<li><a href="#" data-href="#section-speakers"><div>Speakers</div></a></li>
+							<li><a href="#" data-href="#section-services"><div>Program</div></a></li>
+							<li><a href="#" data-href="#section-blog"><div>Venue</div></a></li>
+							<li><a href="#" data-href="#section-contact"><div>Organizer</div></a></li>
+							<li><a href="#" data-href="#section-organizers"><div>Staff</div></a></li>
+						</ul>
+
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+
+		<!-- Slider
+		============================================= -->
+		<section id="slider" class="clearfix">
+
+			<div class="section swiper_wrapper parallax nopadding nomargin noborder ohidden" style="background: url('images/cover_2018.jpg')  no-repeat; background-size: cover;" data-stellar-background-ratio="0.5">
+
+
+
+				<div class="container center">
+					<div class="vertical-middle">
+
+						<div class="emphasis-title">
+							<!--h1 class="t600 ls4 uppercase bottommargin-sm" style="font-size: 88px;"><span style="color:#F77C88">Let'</span><span style="color:#D34CA3">S</span><span style="color:#9A50A5">wift</span></h1-->
+							<h1 class="t600 ls4 uppercase nobottommargin" style="font-size: 80px;"><span style="color:#ffffff">Let'Swift 18</span></h1>
+							<p class="lead" style="color:#ffffff">
+							2018년 11월 06일(화). 과학기술회관 B1F 대회의실</p>
+						</div>
+<!--						<a href="#" class="button button-light ls2 button-rounded" data-scrollto="#section-speakers" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">발표 신청</a>
+						<a href="http://onoffmix.com/event/71750" class="button button-light button-rounded" data-scrollto="#" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">참가 신청</a>
+-->
+
+					</div>
+				</div>
+
+				<div class="video-wrap">
+					<div class="video-overlay" style="background: rgba(255,255,255,0.1);"></div>
+				</div>
+
+			</div>
+
+		</section><!-- #slider end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap nopadding">
+
+				<div id="section-about" class="center page-section">
+
+					<div class="container clearfix">
+
+						<h2 class="divcenter bottommargin font-body" style="max-width: 700px; font-size: 40px;">Swift 개발자들끼리<br/> 만나고, 배우고, 즐기는 컨퍼런스 </h2>
+
+						<p class="lead divcenter nobottommargin" style="max-width: 800px;">Swift는 오픈소스 프로젝트로, 전세계 개발자가 함께 만들어가는 언어입니다. <br/> 더이상 iOS 개발자들만 스위프트를 사용해야 하는건 아닙니다. 
+						<br/>더 많은 플랫폼에서 보다 다양한 활용방식을 함께 이야기해보세요.<br/>
+						<strong>2018년 11월 06일(화). 강남역 과학기술회관 B1F</strong></p>
+
+						<br/><br/>
+						<!--div class="notopmargin center"><a href="#" class="button button-border button-circle t600">LetSwift 소식 레터</a></div><br/>
+						 <form style="border:1px solid #ca9;padding:3px;text-align:center;" action="https://tinyletter.com/letswift" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/letswift', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+							 
+							 <p><strong>LetSwift 소식을 이메일로 알려드립니다.</strong><br/>
+							 <input type="text" style="width:140px" name="email" id="tlemail" />
+							 <input type="hidden" value="1" name="embed"/><input type="submit" value="가입하기" />
+							 <p>LetSwift 관련 소식에만 이메일을 활용합니다.</p>
+						 </form--> 
+				</div>
+				</div>
+				<div id="section-speakers" class="center page-section">
+					<div class="content-wrap nopadding">
+						<!--p class="bottommargin" style="font-size: 16px;"><a href="#" data-scrollto="#section-services" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="more-link">Learn more <i class="icon-angle-right"></i></a></p-->
+						<div class="notopmargin center"><a href="#" class="button button-border button-circle t600">Speakers</a></div>
+
+
+						<div class="clear"></div>
+						
+						<br/><br/>
+						<h4 class="divcenter bottommargin font-body" style="max-width: 700px; font-size: 40px;"> 🎤 프로필을 공개합니다.</h4>
+
+						<div class="row topmargin-lg divcenter" style="max-width: 1000px;">
+						
+										
+							<!--div class="col-sm-3 bottommargin">
+								<div class="team">
+									<div class="team-image">
+										<img src="images/team/kimjung.jpg" alt="김정" class="img-responsive img-circle">
+										<div class="team-overlay">
+											<div class="team-specifics center vertical-middle">
+												<p></p>
+											</div>
+										</div>
+									</div>
+									<div class="team-desc team-desc-bg">
+										<div class="team-title"><h4>김정</h4></div>
+									</div>
+								</div>
+							</div-->						
+							<div class="col-sm-3 bottommargin">
+								<div class="team">
+									<div class="team-image">
+										<img src="images/speakers/devxoul.png" alt="전수열" class="img-responsive img-circle">
+										<div class="team-overlay">
+											<div class="team-specifics center vertical-middle">
+												<p>StyleShare에서 iOS 애플리케이션을 개발하고 있습니다. 오픈소스와 개발자 커뮤니티에 관심이 많습니다.</p>
+											</div>
+										</div>
+									</div>
+									<div class="team-desc team-desc-bg">
+										<div class="team-title"><h4>전수열</h4><span></span></div>
+									</div>
+								</div>
+							</div>							
+							<div class="col-sm-3 bottommargin">
+								<div class="team">
+									<div class="team-image">
+										<img src="images/speakers/hacker.jpg" alt="홍길동" class="img-responsive img-circle">
+										<div class="team-overlay">
+											<div class="team-specifics center vertical-middle">
+												<p>비밀 업무를 수행하고 있습니다.</p>
+											</div>
+										</div>
+									</div>
+									<div class="team-desc team-desc-bg">
+										<div class="team-title"><h4>홍길동</h4><span></span></div>
+									</div>
+								</div>
+							</div>	
+						</div>
+						
+					</div>
+
+				</div>
+
+				
+
+				<div id="section-services" class="page-section notoppadding">
+
+					<div class="section nomargin">
+						<div class="container clearfix">
+							<div class="divcenter center" style="max-width: 900px;">
+								<div class="bottommargin center"><a href="#" class="button button-border button-circle t600">Program</a></div>
+<!--								<h2 class="nobottommargin t300 ls1">아직 우리가 무엇에 대해서 이야기 할지 모르겠네요.<br/>WWDC가 끝나면, 모든것이 바뀌어있을지도 모르니까요!</h2>-->
+							</div>
+
+ 				<div class="table-responsive">
+ 					<table class="table table-striped">
+ 						<thead>
+ 							<tr>
+ 								<th class="center">시간</th>
+ 								<th class="center">발표자</th>
+ 								<th class="center">주제</th>
+								<th class="center">비디오 &amp; 슬라이드</th>
+ 							</tr>
+ 						</thead>
+ 						<tbody>
+ 							<tr>
+ 								<td><span class="label label-danger">09:00 - 10:00</span></td>
+								<td></td>
+ 								<td>등록 확인</td>
+								<td></td>
+ 							</tr>
+ 							<tr>
+ 								<td><span class="label label-danger">10:00 - 10:20</span></td>
+								<td><a href="#">김정</a></td>
+ 								<td>키노트</td>
+								<td><a href="">비디오</a> / <a href="">슬라이드</a></td>
+ 							</tr>
+ 							<tr>
+ 								<td><span class="label label-danger">10:25 - 10:55</span></td>
+ 								<td></td>
+ 								<td></td>
+								<td><a href="">비디오</a> / <a href="">슬라이드</a></td>
+ 							</tr>
+ 							<tr>
+ 								<td><span class="label label-danger">11:00 - 11:30</span></td>
+ 								<td></td>
+								<td></td>
+								<td><a href="">비디오</a> / <a href="">슬라이드</a></td>
+ 							</tr>
+ 							<tr>
+ 								<td><span class="label label-danger">11:35 - 12:05</span></td>
+ 								<td></td>
+ 								<td></td>
+								<td><a href="">비디오</a> / <a href="">슬라이드</a></td>
+ 							</tr>
+							<tr>
+								<td><span class="label label-danger">12:05 - 13:00</span></td>
+								<td><a href="#"></a></td>
+								<td>점심시간</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><span class="label label-danger">13:00 - 13:30</span></td>
+								<td></td>
+								<td></td>
+								<td><a href="">비디오</a> / <a href="">슬라이드</a></td>
+							</tr>
+							<tr>
+								<td><span class="label label-danger">13:35 - 14:05</span></td>
+								<td></td>
+								<td></td>
+								<td><a href="">비디오</a> / <a href="">슬라이드</a></td>
+							</tr>
+
+							<tr>
+								<td><span class="label label-danger">14:10 - 14:40</span></td>
+								<td></td>
+								<td></td>
+								<td><a href="">비디오</a> / <a href="">슬라이드</a></td>
+							</tr>
+							<tr>
+								<td><span class="label label-danger">14:45 - 15:15</span></td>
+								<td></td>
+								<td></td>
+								<td><a href="">비디오</a> / <a href="">슬라이드</a></td>
+							</tr>
+							<tr>
+								<td><span class="label label-danger">15:15 - 16:00</span></td>
+								<td></td>
+								<td>브레이크 + 네트워킹</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><span class="label label-danger">16:00 - 16:30</span></td>
+								<td></td>
+								<td></td>
+								<td><a href="">비디오</a> / <a href="">슬라이드</a></td>
+							</tr>
+							<tr>
+								<td><span class="label label-danger">16:35 - 17:05</span></td>
+								<td></td>
+								<td></td>
+								<td><a href="">비디오</a> / <a href="">슬라이드</a></td>
+							</tr>
+							<tr>
+								<td><span class="label label-danger">17:10 - 17:50</span></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>							
+							<tr>
+								<td><span class="label label-danger">17:50 - 18:00</span></td>
+								<td></td>
+								<td>경품 추첨</td>
+								<td></td>
+							</tr>
+ 						</tbody>
+ 					</table>
+						</div>
+					</div>
+		 						<p class="divcenter center">프로그램 시간표는 사정에 따라 일부 변경될 수 있습니다.</p>
+ 				</div>
+			</div>
+ 				
+
+					<div class="section nomargin">
+						<div class="divcenter center" style="max-width: 900px;">
+							<h2 class="nobottommargin t300 ls1">곧 티켓 판매를 시작할 예정입니다.</h2>
+							<!--h2 class="nobottommargin t300 ls1">여러분들 기다리고 있습니다. <a href="https://onoffmix.com/event/109521" data-scrollto="#template-contactform" data-offset="140" data-easing="easeInOutExpo" data-speed="1250" class="button button-border button-rounded button-dark button-large notopmargin nobottommargin" style="position: relative; top: -3px;">참가 신청하기</a></h2-->
+						</div>
+					</div>
+
+				</div>
+				
+				
+				<div id="section-blog" class="page-section">
+
+					<!--h2 class="center uppercase t300 ls3 font-body">오시는 길</h2-->
+					<div class="bottommargin center"><a href="#" class="button button-border button-circle t600">Venue</a></div>
+  				<div class="overlay center" onClick="style.pointerEvents='none'"></div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.300846410297!2d127.02847231557205!3d37.5008219798102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca157de00cbb3%3A0xe5266ee55f1d179e!2sKorea+Institute+of+Science+and+Technology+Center!5e0!3m2!1sen!2skr!4v1535603750794" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+				</div>
+
+				<div id="section-contact" class="page-section notoppadding">
+					<div class="bottommargin center"><a href="#" class="button button-border button-circle t600">Organizer</a></div>
+					<div class="container clearfix">
+						<div class="col-sm-3 divcenter bottommargin">
+							<a href="http://www.osxdev.org/"><img src="images/sponsors/osxdev.jpg" alt="OSXdev"></a>
+							<a href="https://www.facebook.com/groups/swiftkor/"><img src="images/sponsors/swiftkorea.jpg" alt="OSXdev"></a>
+						</div>
+					</div>
+
+					<div class="bottommargin center"><a href="#" class="button button-border button-circle t600">Sponsors</a></div>
+					<div class="container clearfix">
+						<div class="col-sm-3 bottommargin">
+							<a href="http://codesquad.kr/"><img src="images/sponsors/codesquad.png" alt="Codesquad"></a>
+						</div>
+						<!--div class="col-sm-3 bottommargin">
+							<a href="http://d2.naver.com/"><img src="images/sponsors/naverD2.jpg" alt="Naver D2"></a>
+						</div>
+						<div class="col-sm-3 bottommargin">
+							<a href="http://www.timnet.co.kr/"><img src="images/sponsors/TIMNETKorea.png" alt="TIMNET Korea"></a>
+						</div-->	
+					</div>
+				</div>
+				<div id="section-organizers" class="page-section notoppadding">
+
+					<div class="bottommargin center"><a href="#" class="button button-border button-circle t600">Staff</a></div>
+					
+										<!--h2 class="center uppercase t300 ls3 font-body">Recently From the Blog</h2-->
+
+										<div class="section nobottommargin">
+											<div class="container clearfix">
+
+												<div class="row topmargin clearfix">
+													<div class="ipost col-sm-4 bottommargin clearfix">
+														<div class="row">
+															<div class="col-md-6">
+																<div class="entry-image nobottommargin">
+																	<a href="#"><img src="images/team/kimjung.jpg" alt="Paris"></a>
+																</div>
+															</div>
+															<div class="col-md-6" style="margin-top: 20px;">
+																<span class="before-heading" style="font-style: normal;">김 정</span>
+																<div class="entry-title">
+																	<h3 class="t400" style="font-size: 22px;"><a href="https://twitter.com/godrm">@godrm</a></h3>
+																</div>
+																<div class="entry-content">
+																	<!--a href="#" class="more-link">Read more <i class="icon-angle-right"></i></a-->
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!--div class="ipost col-sm-4 bottommargin clearfix">
+														<div class="row">
+															<div class="col-md-6">
+																<div class="entry-image nobottommargin">
+																	<a href="#"><img src="images/team/parkminwoo.jpg" alt="Paris"></a>
+																</div>
+															</div>
+															<div class="col-md-6" style="margin-top: 20px;">
+																<span class="before-heading" style="font-style: normal;">박민우</span>
+																<div class="entry-title">
+																	<h3 class="t400" style="font-size: 22px;"><a href="https://twitter.com/tebica">@tebica</a></h3>
+																</div>
+																<div class="entry-content">
+																</div>
+															</div>
+														</div>
+													</div-->
+													
+												</div>
+
+											</div>
+										</div>
+
+				</div>
+				
+			</div>
+
+			<div>
+				<h4 class="center bottommargin font-body" style="font-size: 20px;">예전의 열기를 기억한다면...<br/><a href="http://letswift.kr/2017/index.html"><u>Let'Swift 2017</u></a>&nbsp;/&nbsp;<a href="http://letswift.kr/2016/index.html"><u>Let'Swift 2016</u></a></h3>
+			</div>
+
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark noborder">
+
+			<div id="copyrights">
+				<div class="container center clearfix">
+					Copyright LetSwift 2016-2018 | All Rights Reserved
+				</div>
+			</div>
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="js/functions.js"></script>
+
+</body>
+</html>
