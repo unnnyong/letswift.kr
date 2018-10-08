@@ -110,6 +110,7 @@
 	bottom: 0;
 }
 
+#home .home-icons .icon-sessions:hover,
 #home .home-icons .icon-2016:hover,
 #home .home-icons .icon-2017:hover {
   opacity: 0.8;
