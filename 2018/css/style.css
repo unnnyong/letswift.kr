@@ -69,6 +69,10 @@
 	width: 243px;
 }
 
+#home .home-noti:hover {
+  opacity: 0.8;
+}
+
 #home .home-icons {
 	width: 100%;
 	height: 100%;
@@ -104,6 +108,11 @@
 	height: 67px;
 	right: 0;
 	bottom: 0;
+}
+
+#home .home-icons .icon-2016:hover,
+#home .home-icons .icon-2017:hover {
+  opacity: 0.8;
 }
 
 @media (max-width: 767px) {
