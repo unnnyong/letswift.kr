@@ -505,6 +505,10 @@
   height: 137px;
 }
 
+#section-staff .staff:hover .avatar {
+  opacity: 0.8;
+}
+
 #section-staff .staff .name {
   margin-top: 13px;
   width: 100%;
