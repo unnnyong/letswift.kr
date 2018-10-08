@@ -367,6 +367,10 @@
   margin: 0 -32px;
 }
 
+#section-program .table-program td {
+  height: 15px;
+}
+
 #section-program .table-program th:not(:empty) {
   padding: 14px 19px;
   background-color: #151515;
@@ -376,7 +380,6 @@
 }
 
 #section-program .table-program td {
-  height: 15px;
   vertical-align: top;
 }
 
@@ -417,13 +420,9 @@
   display: block;
 }
 
-#section-program .table-program td.time {
-  min-height: 180px;
-  height: 180px;
-}
-
 #section-program .table-program td.time:not(:empty) {
   padding: 6px 0;
+  height: 180px;
   color: #151515;
   font-size: 15px;
   font-weight: bold;
