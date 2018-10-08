@@ -78,7 +78,7 @@
 	height: 100%;
 }
 
-#home .home-icons .icon-music {
+#home .home-icons .icon-tellme {
 	position: absolute;
 	width: 51px;
 	height: 70px;
@@ -110,6 +110,7 @@
 	bottom: 0;
 }
 
+#home .home-icons .icon-tellme:hover,
 #home .home-icons .icon-sessions:hover,
 #home .home-icons .icon-2016:hover,
 #home .home-icons .icon-2017:hover {
@@ -137,7 +138,7 @@
 		font-size: 12px;
 	}
 
-	#home .home-icons .icon-music {
+	#home .home-icons .icon-tellme {
 		position: absolute;
 		width: 51px;
 		height: 70px;
@@ -207,7 +208,7 @@
 		font-size: 12px;
 	}
 
-	#home .home-icons .icon-music {
+	#home .home-icons .icon-tellme {
 		position: absolute;
 		width: 51px;
 		height: 70px;
