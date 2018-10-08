@@ -83,7 +83,7 @@
 	width: 51px;
 	height: 70px;
 	right: 206px;
-	bottom: 0;
+	bottom: -1px;
 }
 
 #home .home-icons .icon-sessions {
