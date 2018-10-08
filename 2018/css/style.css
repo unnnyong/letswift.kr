@@ -305,6 +305,7 @@
 	color: black;
   padding: 10px 50px;
   margin-left: 94px;
+  visibility: hidden;
 }
 
 #section-about .container .btn-ticket:hover {
