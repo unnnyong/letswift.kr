@@ -392,13 +392,8 @@
   width: 42%;
 }
 
-#section-program .table-program td.session {
-  vertical-align: middle;
-}
-
 #section-program .table-program td.session.reserved {
   background-color: #90DD22;
-  vertical-align: top;
 }
 
 #section-program .table-program td.session .time {
