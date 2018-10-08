@@ -420,9 +420,15 @@
   display: block;
 }
 
+#section-program .table-program td.time {
+  position: relative;
+}
+#section-program .table-program td.time span {
+  position: absolute;
+  top: 16px;
+}
 #section-program .table-program td.time:not(:empty) {
-  padding: 6px 0;
-  height: 180px;
+  line-height: 0;
   color: #151515;
   font-size: 15px;
   font-weight: bold;
@@ -446,7 +452,7 @@
     margin: 0 -16px;
   }
 
-  #section-program .table-program td.session {
+  #section-program .table-program td.session:not(:empty) {
     position: relative;
     padding-bottom: 60px !important;
   }
