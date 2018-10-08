@@ -1,5 +1,11 @@
 /* common */
 
+header {
+  position: fixed !important;
+  width: 100%;
+  z-index: 100;
+}
+
 .page-section {
   padding-top: 80px !important;
   padding-bottom: 0 !important;
@@ -11,6 +17,10 @@
 }
 
 /* home */
+
+#home {
+  padding-top: 70px;
+}
 
 #home .section {
 	background-color: #707070;
@@ -115,6 +125,12 @@
 #home .home-icons .icon-2016:hover,
 #home .home-icons .icon-2017:hover {
   opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+  #home {
+    padding-top: 60px;
+  }
 }
 
 @media (max-width: 767px) {
