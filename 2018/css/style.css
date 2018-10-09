@@ -564,6 +564,11 @@ header {
   width: 42%;
 }
 
+#section-program .table-program td.session:not(:empty):not(.reserved),
+#section-program .table-program td.workshop:not(:empty):not(.reserved) {
+  cursor: pointer;
+}
+
 #section-program .table-program td.session.reserved {
   background-color: #90DD22;
 }
@@ -602,12 +607,65 @@ header {
   border-top: 4px solid #151515;
 }
 
+#section-program .program-modal {
+  position: fixed;
+  top: 100px;
+  left: 10%;
+  right: 10%;
+  text-align: left;
+  padding: 45px;
+  background-color: white;
+  border: 1.5px solid black;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  z-index: 50;
+}
+
+#section-program .program-modal .avatar {
+  width: 275px;
+  height: 275px;
+  margin-right: 45px;
+  object-fit: cover;
+}
+
+#section-program .program-modal .content {
+  
+}
+
+#section-program .program-modal .title {
+  margin-bottom: 17px;
+  font-weight: bold;
+  font-size: 19px;
+  color: #19BF2D;
+}
+
+#section-program .program-modal .name::before {
+  content: '@';
+}
+
+#section-program .program-modal .name {
+  margin-bottom: 17px;
+  font-size: 16px;
+  color: #535353;
+}
+
+#section-program .program-modal .description {
+  margin-bottom: 0;
+  font-size: 18px;
+  color: black;
+}
+
 @media (max-width: 992px) {
   #section-program .table-program {
     border-collapse: separate;
     border-spacing: 20px 0;
     width: calc(100% + 40px);
     margin: 0 -20px;
+  }
+
+  #section-program .program-modal {
+    padding: 30px 60px;
   }
 }
 
@@ -632,6 +690,19 @@ header {
 
   #section-program .table-program td.workshop .speaker {
     margin-top: 15px;
+  }
+
+  #section-program .program-modal {
+    flex-flow: row wrap;
+  }
+
+  #section-program .program-modal .avatar {
+    width: 200px;
+    height: 200px;
+  }
+
+  #section-program .program-modal .title {
+    margin-top: 30px;
   }
 }
 
@@ -660,6 +731,22 @@ header {
     position: absolute;
     left: 10px;
     bottom: 8px;
+  }
+
+  #section-program .program-modal {
+    padding: 30px;
+  }
+
+  #section-program .program-modal .avatar {
+    display: none;
+  }
+
+  #section-program .program-modal .title {
+    margin-top: 0;
+  }
+
+  #section-program .program-modal .name {
+    display: none;
   }
 }
 
@@ -713,6 +800,7 @@ header {
   background-color: white;
   border: 1.5px solid black;
   cursor: pointer;
+  z-index: 50;
 }
 
 #section-staff .staff-modal .avatar {
