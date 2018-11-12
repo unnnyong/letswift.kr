@@ -615,6 +615,22 @@ header {
   border-top: 4px solid #151515;
 }
 
+#section-program .table-program td.session .links,
+#section-program .table-program td.workshop .links {
+  margin-top: 10px;
+  list-style: none;
+}
+
+#section-program .table-program td.session .links li:not(:last-child)::after,
+#section-program .table-program td.workshop .links li:not(:last-child)::after {
+  content: "\00a0/\00a0";
+}
+
+#section-program .table-program td.session .links li,
+#section-program .table-program td.workshop .links li {
+  float: left;
+}
+
 #section-program .program-modal {
   position: fixed;
   top: 100px;
