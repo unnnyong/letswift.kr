@@ -70,11 +70,11 @@ const STAFFS = {
 
 $(document).ready(() => {
   $('body').on('click', (e) => {
-    const isSessionElement = $('.table-program td.session').is(e.target) || $('.table-program td.session').find(e.target).length;
-    const isWorkshopElement = $('.table-program td.workshop').is(e.target) || $('.table-program td.workshop').find(e.target).length;
-    if (!isSessionElement && !isWorkshopElement) {
-      hideProgramModal();
-    }
+    // const isSessionElement = $('.table-program td.session').is(e.target) || $('.table-program td.session').find(e.target).length;
+    // const isWorkshopElement = $('.table-program td.workshop').is(e.target) || $('.table-program td.workshop').find(e.target).length;
+    // if (!isSessionElement && !isWorkshopElement) {
+    //   hideProgramModal();
+    // }
 
     const isStaffElement = $('.staff').is(e.target) || $('.staff').find(e.target).length > 0;
     if (!isStaffElement) {
@@ -82,27 +82,27 @@ $(document).ready(() => {
     }
   })
 
-  $('.table-program td.session:not(:empty):not(.reserved)').on('click', (e) => {
-    const title = $(e.currentTarget).find('.title').text();
-    const speakerName = $(e.currentTarget).find('.speaker').text();
-    const currentModalName = $('.program-modal').find('.name').text();
-    if (currentModalName !== speakerName) {
-      showProgramModal(SESSIONS, title, speakerName);
-    } else {
-      hideProgramModal();
-    }
-  });
+  // $('.table-program td.session:not(:empty):not(.reserved)').on('click', (e) => {
+  //   const title = $(e.currentTarget).find('.title').text();
+  //   const speakerName = $(e.currentTarget).find('.speaker').text();
+  //   const currentModalName = $('.program-modal').find('.name').text();
+  //   if (currentModalName !== speakerName) {
+  //     showProgramModal(SESSIONS, title, speakerName);
+  //   } else {
+  //     hideProgramModal();
+  //   }
+  // });
 
-  $('.table-program td.workshop:not(.empty):not(.reserved)').on('click', (e) => {
-    const title = $(e.currentTarget).find('.title').text();
-    const speakerName = $(e.currentTarget).find('.speaker').text();
-    const currentModalName = $('.program-modal').find('.name').text();
-    if (currentModalName !== speakerName) {
-      showProgramModal(WORKSHOPS, title, speakerName);
-    } else {
-      hideProgramModal();
-    }
-  });
+  // $('.table-program td.workshop:not(.empty):not(.reserved)').on('click', (e) => {
+  //   const title = $(e.currentTarget).find('.title').text();
+  //   const speakerName = $(e.currentTarget).find('.speaker').text();
+  //   const currentModalName = $('.program-modal').find('.name').text();
+  //   if (currentModalName !== speakerName) {
+  //     showProgramModal(WORKSHOPS, title, speakerName);
+  //   } else {
+  //     hideProgramModal();
+  //   }
+  // });
 
   $('.program-modal').on('click', () => {
     hideProgramModal();

@@ -572,11 +572,11 @@ header {
   width: 42%;
 }
 
-#section-program .table-program td.session:not(:empty):not(.reserved),
+/*#section-program .table-program td.session:not(:empty):not(.reserved),
 #section-program .table-program td.workshop:not(:empty):not(.reserved) {
   cursor: pointer;
 }
-
+*/
 #section-program .table-program td.session.reserved {
   background-color: #90DD22;
 }
