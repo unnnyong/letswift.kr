@@ -181,8 +181,8 @@ header {
 
 @media (max-width: 767px) {
 	#home .home-canvans {
-		height: 400px;
-		line-height: 400px;
+		height: 300px;
+		line-height: 300px;
 		top: 70px;
 		left: 90px;
 		right: 20px;
@@ -199,6 +199,30 @@ header {
 		text-align: left;
 		font-size: 12px;
 	}
+
+  #home .home-icons .icon-photos1 {
+    position: absolute;
+    width: 52px;
+    height: 67px;
+    left: calc(26% + 5px);
+    bottom: 100px;
+  }
+
+  #home .home-icons .icon-photos2 {
+    position: absolute;
+    width: 52px;
+    height: 67px;
+    right: calc(26% + 5px);
+    bottom: 100px;
+  }
+
+  #home .home-icons .icon-photos3 {
+    position: absolute;
+    width: 52px;
+    height: 67px;
+    right: 0;
+    bottom: 100px;
+  }
 
 	#home .home-icons .icon-tellme {
 		position: absolute;
@@ -251,8 +275,8 @@ header {
 
 @media (max-width: 767px) {
 	#home .home-canvans {
-		height: 400px;
-		line-height: 400px;
+		height: 300px;
+		line-height: 300px;
 		top: 70px;
 		left: 90px;
 		right: 20px;
@@ -278,6 +302,30 @@ header {
 		bottom: 0;
 	}
 	
+    #home .home-icons .icon-photos1 {
+    position: absolute;
+    width: 52px;
+    height: 67px;
+    left: calc(26% + 5px);
+    bottom: 100px;
+  }
+
+  #home .home-icons .icon-photos2 {
+    position: absolute;
+    width: 52px;
+    height: 67px;
+    right: calc(26% + 5px);
+    bottom: 100px;
+  }
+
+  #home .home-icons .icon-photos3 {
+    position: absolute;
+    width: 52px;
+    height: 67px;
+    right: 0;
+    bottom: 100px;
+  }
+  
 	#home .home-icons .icon-sessions {
 		position: absolute;
 		width: 52px;
