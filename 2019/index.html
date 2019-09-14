@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+	<meta name="author" content="letswift" />
+	<meta property="og:image" content="http://www.letswift.kr/2018/images/letswift-cover.png"/>
+	<meta property="og:url" content="http://www.letswift.kr/2019/"/>
+	<meta property="og:title" content="도전하는 개발자를 만나는 스위프트 컨퍼런스: Let'Swift">
+	<meta property="og:description" content="WWDC 애플 개발자 컨퍼런스만큼 재밌는 스위프트 컨퍼런스. 11월 06일(화)에 열립니다!"/>
+	<meta name=description content="애플이 만든 Swift는 이제 전세계 개발자가 함께 만들어가는 오픈소스 언어입니다. iOS 개발자 뿐만 더 많은 플랫폼에서 활용하는 사람들을 함께 만나요.">
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="theme.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/et-line.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/fonts.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+	<style type="text/css">
+	a, h4 > span:not(.nocolor) {	color: #19BF2D; }
+	a:hover { color: #297e52; }
+	.before-heading {font-size: 22px;}
+	.emphasis-title { margin:0 0 25px; }
+	#primary-menu > ul > li:hover a, #primary-menu > ul > li.current a {
+    color: #FFC9B7;
+  }
+
+	#primary-menu ul li a {
+		color: #;
+		font-size: 14px;
+		font-weight: 600;
+	}
+	.page-section {
+    padding: 80px 0;
+	}
+	.overlay {
+	   background:transparent;
+	   position:relative;
+	   width:100%;
+	   height:450px; /* your iframe height */
+	   top:450px;  /* your iframe height */
+	   margin-top:-450px;  /* your iframe height */
+	}
+	</style>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-79004702-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	<!-- Document Title
+	============================================= -->
+	<title>Let'Swift : 스위프트 컨퍼런스</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu">
+
+						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+							<li><a href="#" data-href="#wrapper"><div>Home</div></a></li>
+							<li><a href="#" data-href="#section-about"><div>About</div></a></li>
+							<li><a href="#" data-href="#section-ticket"><div>Ticket</div></a></li>
+							<li><a href="#" data-href="#section-program"><div>Program</div></a></li>
+							<li><a href="#" data-href="#section-sponsors"><div>Sponsors</div></a></li>
+							<li><a href="#" data-href="#section-staff"><div>Staff</div></a></li>
+							<li><a href="#" data-href="#section-venue"><div>Venue</div></a></li>
+						</ul>
+
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+
+		<!-- Slider
+		============================================= -->
+		<section id="home" class="clearfix">
+
+			<div class="section swiper_wrapper nopadding nomargin noborder ohidden">
+				<div class="container center one-page-menu">
+					<div class="home-sidemenu">
+						<img src="images/header2_image1.png" width="47">
+					</div>
+
+					<div class="home-canvans">
+						<img src="images/header2_swift_logo.png">
+					</div>
+
+					<a class="home-noti" href="#" data-href="#section-venue">
+						<div class="content">
+							<strong>과학기술회관 B1F</strong>
+							<br>
+							<span>2018년 11월 06일 (화)</span>
+						</div>
+						<img src="images/header2_image2.png">
+					</a>
+
+					<div class="home-icons">
+						<a href="https://photos.app.goo.gl/iWbes8qcMBgxdHPw8" target="_blank" class="icon-photos1"><img src="images/header2_icon5.png"></a>
+						<a href="https://photos.app.goo.gl/bP18MtGhYH82zwyt6" target="_blank" class="icon-photos2"><img src="images/header2_icon6.png"></a>
+						<a href="https://photos.app.goo.gl/VGBRmPqr9cu6N4TD8" target="_blank" class="icon-photos3"><img src="images/header2_icon7.png"></a>
+						<a href="#" data-href="#footer" class="icon-tellme"><img src="images/header2_icon1.png"></a>
+						<a href="#" data-href="#section-program" class="icon-sessions"><img src="images/header2_icon2.png"></a>
+						<a href="../2016/index.html" target="_blank" class="icon-2016"><img src="images/header2_icon3.png"></a>
+						<a href="../2017/index.html" target="_blank"class="icon-2017"><img src="images/header2_icon4.png"></a>
+					</div>
+				</div>
+			</div>
+
+		</section><!-- #home end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap nopadding">
+
+				<div id="section-about" class="center page-section">
+					<div class="container clearfix">
+						<div class="flex-container">
+							<div class="image">
+								<img src="images/about_logo.png">
+							</div>
+							<div class="text">
+								<div>
+									<h3>도전하는 Swift 개발자들끼리 만나고, 배우고, 즐기는 컨퍼런스</h3>
+									<p>
+										Swift는 오픈소스 프로젝트로, 전세계 개발자가 함께 만들어가는 언어입니다.<br />
+										더이상 iOS 개발자들만 스위프트를 사용해야 하는건 아닙니다.<br />
+										더 많은 플랫폼에서 보다 다양한 활용방식을 함께 이야기해보세요.
+									</p>
+								</div>
+								<ul class="slido">
+									<li><strong>세션과 워크숍 질문은 sli.do에 남겨주세요.</strong></li>
+									<li>세션 질문: <a href="https://app2.sli.do/event/atbtbdyr/questions" target="_blank">#letswift18-session</a></li>
+									<li>워크숍 질문: <a href="https://app2.sli.do/event/rkj9tejm/questions" target="_blank">#letswift18-workshop</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="section-ticket" class="page-section">
+					<div class="container clearfix">
+						<h2>Ticket</h2>
+
+						<div class="flex-container">
+							<div class="ticket">
+								<div class="ticket-name">
+									<h3>Let'Ticket</h3>
+								</div>
+								<div class="ticket-content">
+									<div class="includes">
+										<div class="item">
+											<div class="icon-wrap">
+												<img src="images/session.png" width="59" height="45">
+											</div>
+											<span>Session</span>
+										</div>
+										<div class="item">
+											<div class="icon-wrap">
+												<img src="images/goods.png" width="65" height="64">
+											</div>
+											<span>Goods</span>
+										</div>
+									</div>
+									<strong class="price">32,000원 (300명)</strong>
+									<p class="info">정성스럽게 준비한 10개의 세션과<br />기념품이 준비되어 있습니다.</p>
+									<div>
+										<a class="btn-letswift btn-ticket disabled" href="https://festa.io/events/111" target="_blank">매진되었습니다.</a>
+									</div>
+									<div>
+										<small>👋 11월 6일에 뵈어요!</small>
+									</div>
+								</div>
+							</div>
+
+							<div class="ticket">
+								<div class="ticket-name">
+									<h3>Let'Ticket <span>Max</span></h3>
+								</div>
+								<div class="ticket-content">
+									<div class="includes">
+										<div class="item">
+											<div class="icon-wrap">
+												<img src="images/workshop.png" width="63" height="53">
+											</div>
+											<span class="workshop">Workshop</span>
+										</div>
+										<div class="item">
+											<div class="icon-wrap">
+												<img src="images/session.png" width="59" height="45">
+											</div>
+											<span>Session</span>
+										</div>
+										<div class="item">
+											<div class="icon-wrap">
+												<img src="images/goods.png" width="65" height="64">
+											</div>
+											<span>Goods</span>
+										</div>
+									</div>
+									<strong class="price">39,000원 (80명)</strong>
+									<p class="info">워크숍은 별도 공간에서 진행됩니다.<br />실습 위주로 진행되므로 맥북이 필요합니다.</p>
+									<div>
+										<a class="btn-letswift btn-ticket disabled" href="https://festa.io/events/111" target="_blank">매진되었습니다.</a>
+									</div>
+									<div>
+										<small>👋 11월 6일에 뵈어요!</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="section-program" class="page-section">
+					<div class="container clearfix">
+						<h2>PROGRAM</h2>
+
+						<table class="table-program">
+							<thead>
+								<tr>
+									<th>발표 세션</th>
+									<th></th>
+									<th>워크숍 세션</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr><!--09:00-->
+									<td rowspan="12" class="session reserved">
+										<span class="time">09:00-10:00</span>
+										<span class="title">👋 참가 등록</span>
+									</td>
+									<td class="time"><span>09:00</span></td>
+									<td rowspan="12" class="workshop"></td>
+								</tr>
+								<tr><!--10:05-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:10-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:15-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:20-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:25-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:30-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:35-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:40-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:45-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:50-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:55-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:00-->
+									<td rowspan="4" class="session">
+										<span class="time">10:00-10:20</span>
+										<span class="title">키노트</span>
+										<span class="speaker">김정</span>
+										<ul class="links">
+											<li><a href="https://www.slideshare.net/godrm/letswift18" target="_blank">발표자료</a></li>
+											<li><a href="https://www.youtube.com/watch?v=xZ5IywL9Zkg&index=2&list=PLAHa1zfLtLiNPl0RVd6WX6W_aa678RAmS&t=6s" target="_blank">동영상</a></li>
+										</ul>
+									</td>
+									<td class="time"><span>10:00</span></td>
+									<td rowspan="12" class="workshop"></td>
+								</tr>
+								<tr><!--10:05-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:10-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:15-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:20-->
+									<td class="session"></td>
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:25-->
+									<td rowspan="6" class="session">
+										<span class="time">10:25-10:55</span>
+										<span class="title">사이드 프로젝트로 앱스토어 1위 공략해보기</span>
+										<span class="speaker">노수진</span>
+										<ul class="links">
+											<li><a href="https://www.dropbox.com/s/z1er7m6i77ugc4q/2.SideProject.pdf?dl=0" target="_blank">발표자료</a></li>
+											<li><a href="https://www.youtube.com/watch?v=_2t24zQvRFs&index=3&list=PLAHa1zfLtLiNPl0RVd6WX6W_aa678RAmS" target="_blank">동영상</a></li>
+										</ul>
+									</td>
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:30-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:35-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:40-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:45-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:50-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:55-->
+									<td class="session"></td>
+									<td class="time"></td>
+								</tr>
+								<tr><!--11:00-->
+									<td rowspan="6" class="session">
+										<span class="time">11:00-11:30</span>
+										<span class="title">iOS 💖Ruby</span>
+										<span class="speaker">김은영</span>
+										<ul class="links">
+											<li><a href="https://www.dropbox.com/s/1de5t4vmeyd1gcf/3.iOS%2ARuby.pdf?dl=0" target="_blank">발표자료</a></li>
+											<li><a href="https://www.youtube.com/watch?v=BDuVrhfnsnE&index=4&list=PLAHa1zfLtLiNPl0RVd6WX6W_aa678RAmS" target="_blank">동영상</a></li>
+										</ul>
+									</td>
+									<td class="time"><span>11:00</span></td>
+									<td rowspan="13" class="workshop">
+										<span class="time">11:00-12:05</span>
+										<span class="title">클린코드와 코드리뷰</span>
+										<span class="speaker">김정</span>
+										<ul class="links">
+											<li><a href="https://www.slideshare.net/godrm/letswift18-1" target="_blank">발표자료</a></li>
+											<li><a href="http://github.com/godrm/ChessMate" target="_blank">샘플코드</a></li>
+										</ul>
+									</td>
+								</tr>
+								<tr><!--11:05-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--11:10-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--11:15-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--11:20-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--11:25-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--11:30-->
+									<td class="session"></td>
+									<td class="time"></td>
+								</tr>
+								<tr><!--11:35-->
+									<td rowspan="6" class="session">
+										<span class="time">11:35-12:05</span>
+										<span class="title">TDS (Toss Design System) v2 소개</span>
+										<span class="speaker">이택규</span>
+										<ul class="links">
+											<li><a href="https://www.dropbox.com/s/xupditsrmowyhbf/4.TDS_v2.pdf?dl=0" target="_blank">발표자료</a></li>
+											<li><a href="https://www.youtube.com/watch?v=fWdXnLERm8E&index=5&list=PLAHa1zfLtLiNPl0RVd6WX6W_aa678RAmS" target="_blank">동영상</a></li>
+										</ul>
+									</td>
+									<td class="time"></td>
+								</tr>
+								<tr><!--11:40-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--11:45-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--11:50-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--11:55-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--12:00-->
+									<td class="time"><span>12:00</span></td>
+								</tr>
+								<tr><!--12:05-->
+									<td rowspan="11" class="session reserved">
+										<span class="time">12:05-13:00</span>
+										<span class="title">😋 점심시간</span>
+									</td>
+									<td class="time"></td>
+									<td rowspan="11" class="workshop"></td>
+								</tr>
+								<tr><!--12:10-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--12:15-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--12:20-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--12:25-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--12:30-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--12:35-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--12:40-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--12:45-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--12:50-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--12:55-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--13:00-->
+									<td rowspan="6" class="session">
+										<span class="time">13:00-13:30</span>
+										<span class="title">RxRIBs, Multiplatform architecture with Rx</span>
+										<span class="speaker">김남현</span>
+										<ul class="links">
+											<li><a href="https://www.dropbox.com/s/c4gd6auuu28h4nb/5.ribs.pdf?dl=0" target="_blank">발표자료</a></li>
+											<li><a href="https://www.youtube.com/watch?v=BvPW-cd8mpw&index=6&list=PLAHa1zfLtLiNPl0RVd6WX6W_aa678RAmS" target="_blank">동영상</a></li>
+										</ul>
+									</td>
+									<td class="time"><span>13:00</span></td>
+									<td rowspan="13" class="workshop">
+										<span class="time">13:00-14:05</span>
+										<span class="title">Debugging with Xcode, LLDB and Chisel</span>
+										<span class="speaker">안정민</span>
+										<ul class="links">
+											<li><a href="https://www.dropbox.com/s/tr31b3t28ft3z7x/workshop%232.Debugging%20With%20Xcode%2C%20LLDB%20and%20Chisel.pdf?dl=0" target="_blank">발표자료</a></li>
+										</ul>
+									</td>
+								</tr>
+								<tr><!--13:05-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--13:10-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--13:15-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--13:20-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--13:25-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--13:30-->
+									<td class="session"></td>
+									<td class="time"></td>
+								</tr>
+								<tr><!--13:35-->
+									<td rowspan="6" class="session">
+										<span class="time">13:35-14:05</span>
+										<span class="title">ReactorKit으로 RxSwift 시작하기</span>
+										<span class="speaker">김태준</span>
+										<ul class="links">
+											<li><a href="https://www.dropbox.com/s/cqtcg2c1vfyf2z6/6.ReactorKit%2ARxSwift.pdf?dl=0" target="_blank">발표자료</a></li>
+											<li><a href="https://www.youtube.com/watch?v=G1b1sBy8XBA&index=7&list=PLAHa1zfLtLiNPl0RVd6WX6W_aa678RAmS" target="_blank">동영상</a></li>
+										</ul>
+									</td>
+									<td class="time"></td>
+								</tr>
+								<tr><!--13:40-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--13:45-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--13:50-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--13:55-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--14:00-->
+									<td class="time"><span>14:00</span></td>
+								</tr>
+								<tr><!--14:05-->
+									<td class="session"></td>
+									<td class="time"></td>
+									<td class="workshop"></td>
+								</tr>
+								<tr><!--14:10-->
+									<td rowspan="6" class="session">
+										<span class="time">14:10-14:40</span>
+										<span class="title">ReSwift와 함께 Unidirectional Architecture</span>
+										<span class="speaker">황재욱</span>
+										<ul class="links">
+											<li><a href="https://www.dropbox.com/s/5ga4gri17cngaoo/7.Reswift.pdf?dl=0" target="_blank">발표자료</a></li>
+											<li><a href="https://www.youtube.com/watch?v=ypI9VP0Q48k&index=8&list=PLAHa1zfLtLiNPl0RVd6WX6W_aa678RAmS" target="_blank">동영상</a></li>
+										</ul>
+									</td>
+									<td class="time"></td>
+									<td rowspan="13" class="workshop">
+										<span class="time">14:10-15:15</span>
+										<span class="title">AI in iOS</span>
+										<span class="speaker">이승윤</span>
+										<ul class="links">
+											<li><a href="https://www.dropbox.com/s/iyhk5dlm2vagw6h/workshop%233.AI_in_iOS.pdf?dl=0" target="_blank">발표자료</a></li>
+										</ul>
+									</td>
+								</tr>
+								<tr><!--14:15-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--14:20-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--14:25-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--14:30-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--14:35-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--14:40-->
+									<td class="session"></td>
+									<td class="time"></td>
+								</tr>
+								<tr><!--14:45-->
+									<td rowspan="6" class="session">
+										<span class="time">14:45-15:15</span>
+										<span class="title">RxSwift Internal</span>
+										<span class="speaker">오진성</span>
+										<ul class="links">
+											<li><a href="https://www.dropbox.com/s/5b0vwlswjsli9rc/8.RxSwift%20Internal.pdf?dl=0" target="_blank">발표자료</a></li>
+											<li><a href="https://www.youtube.com/watch?v=DsE-sagI04A&index=9&list=PLAHa1zfLtLiNPl0RVd6WX6W_aa678RAmS" target="_blank">동영상</a></li>
+										</ul>
+									</td>
+									<td class="time"></td>
+								</tr>
+								<tr><!--14:50-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--14:55-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--15:00-->
+									<td class="time"><span>15:00</span></td>
+								</tr>
+								<tr><!--15:05-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--15:10-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--15:15-->
+									<td class="session"></td>
+									<td class="time"></td>
+									<td rowspan="9" class="workshop"></td>
+								</tr>
+								<tr><!--15:20-->
+									<td rowspan="8" class="session reserved">
+										<span class="time">15:20-16:00</span>
+										<span class="title">☕️ 쉬는시간</span>
+									</td>
+								</tr>
+								<tr><!--15:25-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--15:30-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--15:35-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--15:40-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--15:45-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--15:50-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--15:55-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--16:00-->
+									<td rowspan="6" class="session">
+										<span class="time">16:00-16:30</span>
+										<span class="title">GraphQL over Rest API</span>
+										<span class="speaker">이봉원</span>
+										<ul class="links">
+											<li><a href="https://www.slideshare.net/itpersons/graphql-over-rest" target="_blank">발표자료</a></li>
+											<li><a href="https://www.youtube.com/watch?v=4JW8kku0V5I&index=12&list=PLAHa1zfLtLiNPl0RVd6WX6W_aa678RAmS" target="_blank">동영상</a></li>
+										</ul>
+									</td>
+									<td class="time"><span>16:00</span></td>
+									<td rowspan="13" class="workshop">
+										<span class="time">16:00-17:05</span>
+										<span class="title">Let's TDD</span>
+										<span class="speaker">전수열</span>
+										<ul class="links">
+											<li><a href="https://www.slideshare.net/devxoul/lets-tdd-122653088" target="_blank">발표자료</a></li>
+											<li><a href="https://youtu.be/meTnd09Pf_M" target="_blank">화면영상</a></li>
+											<li><a href="https://github.com/devxoul/LetsGitHubSearch" target="_blank">샘플코드</a></li>
+										</ul>
+									</td>
+								</tr>
+								<tr><!--16:05-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--16:10-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--16:15-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--16:20-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--16:25-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--16:30-->
+									<td class="session"></td>
+									<td class="time"></td>
+								</tr>
+								<tr><!--16:35-->
+									<td rowspan="6" class="session">
+										<span class="time">16:35-17:05</span>
+										<span class="title">SIMD & MPS in Swift</span>
+										<span class="speaker">양승헌</span>
+										<ul class="links">
+											<li><a href="https://www.dropbox.com/s/cg3fhheu7ayx01h/10.simd%2Amps.pdf?dl=0" target="_blank">발표자료</a></li>
+											<li><a href="https://www.dropbox.com/s/m5b3ozticweffin/10.SwiftCube.zip?dl=0" target="_blank">샘플코드</a></li>
+											<li><a href="https://www.youtube.com/watch?v=S5tJi4KCItI&index=10&list=PLAHa1zfLtLiNPl0RVd6WX6W_aa678RAmS" target="_blank">동영상</a></li>
+										</ul>
+									</td>
+									<td class="time"></td>
+								</tr>
+								<tr><!--16:40-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--16:45-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--16:50-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--16:55-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--17:00-->
+									<td class="time"><span>17:00</span></td>
+								</tr>
+								<tr><!--17:05-->
+									<td class="session"></td>
+									<td class="time"></td>
+									<td rowspan="11" class="workshop"></td>
+								</tr>
+								<tr><!--17:10-->
+									<td rowspan="6" class="session">
+										<span class="time">17:10-17:40</span>
+										<span class="title">☀️ 미스터션샤인</span>
+										<span class="speaker">홍길동</span>
+									</td>
+									<td class="time"></td>
+								</tr>
+								<tr><!--17:15-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--17:20-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--17:25-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--17:30-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--17:35-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--17:40-->
+									<td rowspan="4" class="session reserved">
+										<span class="time">17:40-18:00</span>
+										<span class="title">🎁 경품추첨</span>
+									</td>
+									<td class="time"></td>
+								</tr>
+								<tr><!--17:45-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--17:50-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--17:55-->
+									<td class="time"></td>
+								</tr>
+							</tbody>
+						</table>
+						<div>
+							<small>* 프로그램 내용 및 일정은 상황에 따라 변경될 수 있습니다.</small>
+						</div>
+
+						<div class="program-modal hide">
+							<img class="avatar">
+							<div class="content">
+								<h3 class="title"></h3>
+								<p class="name"></p>
+								<p class="description"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="section-sponsors" class="page-section">
+					<div class="container clearfix">
+						<h2>SPONSORS</h2>
+						<div class="flex-container">
+							<div class="bottommargin"><a href="#" class="button button-border button-circle t600">주최</a></div>
+							<div class="container clearfix">
+								<div class="col-sm-3">
+									<a href="http://www.osxdev.org/"><img src="images/sponsors/osxdev.jpg" alt="OSXdev" height="70px"></a>
+								</div>
+								<div class="col-sm-3">
+									<a href="https://www.facebook.com/groups/swiftkor/"><img src="images/sponsors/swiftkorea.png" alt="SwiftKorea"></a>
+								</div>
+							</div>
+							&nbsp;
+							<div class="bottommargin"><a href="#" class="button button-border button-circle t600">주관</a></div>
+							<div class="container clearfix">
+								<div class="col-sm-3 bottommargin">
+									<a href="http://codesquad.kr/"><img src="images/sponsors/codesquad.png" alt="Codesquad"></a>
+								</div>
+							</div>
+							<div class="bottommargin"><a href="#" class="button button-border button-circle t600">골드 후원</a></div>
+							<div class="container clearfix">
+								<div class="col-sm-3 bottommargin">
+									<a href="http://ab180.co/"><img src="images/sponsors/ab180.png" alt="ab180" height="140px"></a>
+								</div>
+								<div class="col-sm-3 bottommargin">
+									<a href="https://d2.naver.com/home"><img src="images/sponsors/naverD2.jpg" alt="Naver"></a>
+								</div>
+							</div>
+
+							<div class="bottommargin"><a href="#" class="button button-border button-circle t600">실버 후원</a></div>
+							<div class="container clearfix">
+								<div class="col-sm-3 bottommargin">
+									<a href="https://www.lezhin.com/ko"><img src="images/sponsors/lezhin.png" alt="lezhin" width="60%"></a>
+								</div>
+								<div class="col-sm-3 bottommargin">
+									<a href="https://www.kakaocorp.com"><img src="images/sponsors/Kakao.jpg" alt="kakao" width="60%"></a>
+								</div>
+								<div class="col-sm-3 bottommargin">
+									<a href="https://belkin.com/kr"><img src="images/sponsors/belkin.png" alt="belkin" width="60%"></a>
+								</div>
+							</div>
+							<div  class="col-sm-4 bottommargin">
+								<small>* 후원 협의가 완료되는 순서대로 업데이트 중입니다.</small>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="section-staff" class="page-section">
+					<div class="container clearfix">
+						<h2>STAFF</h2>
+						<div class="flex-container">
+							<div class="staff">
+								<img class="avatar" src="images/staff/김정.png">
+								<div class="name">김정</div>
+							</div>
+
+							<div class="staff">
+								<img class="avatar" src="images/staff/이승윤.png">
+								<div class="name">이승윤</div>
+							</div>
+
+							<div class="staff">
+								<img class="avatar" src="images/staff/전수열.png">
+								<div class="name">전수열</div>
+							</div>
+
+							<div class="staff">
+								<img class="avatar" src="images/staff/강현정.png">
+								<div class="name">강현정</div>
+							</div>
+
+							<div class="staff">
+								<img class="avatar" src="images/staff/구범모.png">
+								<div class="name">구범모</div>
+							</div>
+
+							<div class="staff">
+								<img class="avatar" src="images/staff/김은영.png">
+								<div class="name">김은영</div>
+							</div>
+
+							<div class="staff">
+								<img class="avatar" src="images/staff/손창우.png">
+								<div class="name">손창우</div>
+							</div>
+
+							<div class="staff">
+								<img class="avatar" src="images/staff/윤중현.png">
+								<div class="name">윤중현</div>
+							</div>
+
+							<div class="staff">
+								<img class="avatar" src="images/staff/이규진.png">
+								<div class="name">이규진</div>
+							</div>
+
+							<div class="staff">
+								<img class="avatar" src="images/staff/이동진.png">
+								<div class="name">이동진</div>
+							</div>
+
+							<div class="staff">
+								<img class="avatar" src="images/staff/이재성.png">
+								<div class="name">이재성</div>
+							</div>
+
+							<div class="staff">
+								<img class="avatar" src="images/staff/이태현.png">
+								<div class="name">이태현</div>
+							</div>
+
+							<div class="staff">
+								<img class="avatar" src="images/staff/정상엽.png">
+								<div class="name">정상엽</div>
+							</div>
+
+							<div class="staff">
+								<img class="avatar" src="images/staff/정현아.png">
+								<div class="name">정현아</div>
+							</div>
+
+							<div class="staff">
+								<img class="avatar" src="images/staff/조성현.png">
+								<div class="name">조성현</div>
+							</div>
+
+							<div class="staff">
+								<img class="avatar" src="images/staff/최송이.png">
+								<div class="name">최송이</div>
+							</div>
+
+							<div class="staff">
+								<img class="avatar" src="images/staff/하태경.png">
+								<div class="name">하태경</div>
+							</div>
+						</div>
+
+						<div class="staff-modal hide">
+							<img class="avatar">
+							<h3 class="name"></h3>
+							<p class="bio"></p>
+						</div>
+					</div>
+				</div>
+
+				<div id="section-venue" class="page-section">
+					<div class="container clearfix">
+						<h2>VENUE</h2>
+						<div class="flex-container">
+							<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.300846410297!2d127.02847231557205!3d37.5008219798102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca157de00cbb3%3A0xe5266ee55f1d179e!2sKorea+Institute+of+Science+and+Technology+Center!5e0!3m2!1sen!2skr!4v1535603750794" rameborder="0" allowfullscreen></iframe>
+							<div class="info">
+								<h3>과학기술회관 B1F 대회의실</h3>
+								<ul>
+									<li>
+										<strong class="key">일시</strong>
+										<span class="value">11월 6일 (화) 오전 9시부터 오후 6시까지</span>
+									</li>
+									<li>
+										<strong class="key">주소</strong>
+										<span class="value">서울특별시 강남구 테헤란로7길 22</span>
+									</li>
+									<li>
+										<strong class="key">지하철</strong>
+										<span class="value">2호선, 신분당선 강남역 하차 12번 출구 국기원 방향</span>
+									</li>
+									<li>
+										<strong class="key">버스</strong>
+										<span class="value">강남역 주변 버스정류장 하차</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="noborder">
+			<div class="container">
+				<ul class="copyright">
+					<li>© 2016-2018 <a href="http://letswift.kr" target="_blank">Let'Swift</a></li>
+					<li>💖 Collaborated with <a href="http://swiftkorea.org" target="_blank">Swift Korea</a></li>
+				</ul>
+
+				<ul class="credit">
+					<li>🎨 Designed by <a href="https://github.com/unnnyong" target="_blank">Eunyoung Kim</a></li>
+					<li>💻 Developed by <a href="https://github.com/devxoul" target="_blank">Suyeol Jeon</a></li>
+					<li></li>
+				</ul>
+			</div>
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
