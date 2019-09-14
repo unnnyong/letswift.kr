@@ -894,13 +894,14 @@ html[xmlns] .slider-wrap {display: block;}
 
 #header {
 	position: relative;
-	background-color: #FFF;
-	border-bottom: 1px solid #F5F5F5;
+	background-color: #FF33B7;
+	border-bottom: 1px solid #FF33B7;
 }
 
 #header .container { position: relative; }
 
 #header.transparent-header {
+	background-color: #FF33B7;
 	background: transparent;
 	border-bottom: none;
 	z-index: 199;
