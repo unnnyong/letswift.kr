@@ -28,6 +28,19 @@ header {
   padding: 8px 45px;
 }
 
+.btn-submit {
+  display: inline-block;
+	border: 1px solid #FFC9B7 !important;
+  border-radius: 100px;
+  line-height: 20px;
+	font-weight: 500;
+	color: black;
+  width: 100%;
+  background-color: white;
+  padding: 10px 45px;
+  box-shadow: 0 0 4px 4px #FFC9B7;
+}
+
 .btn-letswift:hover {
   background-color: black;
   color: white;
@@ -45,7 +58,8 @@ header {
 }
 
 #home .section {
-	background-color: #707070;
+  background: rgb(255,201,183);
+  background: radial-gradient(circle, rgba(255,201,183,1) 0%, rgba(255,51,183,1) 20%, rgba(255,51,183,1) 100%);
 	float: left;
 	height: 700px !important;
 }
@@ -56,29 +70,61 @@ header {
 	height: calc(100% - 110px);
 }
 
-#home .home-canvans {
-	background-color: white;
-}
-
-#home .home-sidemenu {
+#home .home-title {
 	position: absolute;
+  white-space : nowrap;
 	left: 0;
-	top: 0;
+	top: 180px;
 }
 
-#home .home-canvans {
+#home .home-title .main {
+  position: absolute;
+	top: 0;
+	left: 0;
+	text-align: left;
+	font-size: 45px;
+	color: white;
+}
+
+#home .home-title .sub {
+  position: absolute;
+	top: 60px;
+	left: 0;
+	text-align: left;
+	font-size: 18px;
+  font-style: bold;
+	color: white;
+}
+
+/* #home .home-canvans {
 	position: absolute;
 	left: 82px;
 	right: 278px;
 	max-width: 700px;
 	height: 485px;
 	line-height: 485px;
+} */
+
+#home .home-logo img {
+  margin: auto;
+  top: 100px;
+	max-width: 100%;
+  max-height: 485px;
+  line-height: 485px;
 }
 
-#home .home-canvans img {
+/* #home .home-canvans img {
 	max-width: 277px;
 	width: 50%;
 	margin: auto;
+} */
+
+#home .home-submit {
+	position: absolute;
+
+  top: 390px;
+	left: 0;
+  min-width: 300px;
 }
 
 #home .home-noti {
@@ -105,65 +151,38 @@ header {
   opacity: 0.8;
 }
 
-#home .home-icons {
+#home .home-past {
 	width: 100%;
 	height: 100%;
+  font-size: 16px;
+  font-style: bold;
 }
 
-#home .home-icons .icon-tellme {
-	position: absolute;
-	width: 51px;
-	height: 70px;
-	right: 206px;
-	bottom: -1px;
-}
-
-#home .home-icons .icon-sessions {
+#home .home-past .icon-2016 {
 	position: absolute;
 	width: 52px;
-	height: 67px;
-	right: 103px;
-	bottom: 0;
-}
-
-#home .home-icons .icon-photos1 {
-  position: absolute;
-  width: 52px;
-  height: 67px;
-  right: 206px;
-  bottom: 200px;
-}
-
-#home .home-icons .icon-photos2 {
-  position: absolute;
-  width: 52px;
-  height: 67px;
-  right: 103px;
-  bottom: 200px;
-}
-
-#home .home-icons .icon-photos3 {
-  position: absolute;
-  width: 52px;
-  height: 67px;
-  right: 0;
-  bottom: 200px;
-}
-
-#home .home-icons .icon-2016 {
-	position: absolute;
-	width: 52px;
-	height: 67px;
+	height: 40px;
 	right: 0;
-	bottom: 100px;
+	bottom: 80px;
+  color: white;
 }
 
-#home .home-icons .icon-2017 {
+#home .home-past .icon-2017 {
 	position: absolute;
 	width: 52px;
-	height: 67px;
+	height: 40px;
+	right: 0;
+	bottom: 40px;
+  color: white;
+}
+
+#home .home-past .icon-2018 {
+	position: absolute;
+	width: 52px;
+	height: 40px;
 	right: 0;
 	bottom: 0;
+  color: white;
 }
 
 #home .home-icons .icon-tellme:hover,
@@ -198,62 +217,6 @@ header {
 		left: 45px;
 		text-align: left;
 		font-size: 12px;
-	}
-
-  #home .home-icons .icon-photos1 {
-    position: absolute;
-    width: 52px;
-    height: 67px;
-    left: calc(26% + 5px);
-    bottom: 100px;
-  }
-
-  #home .home-icons .icon-photos2 {
-    position: absolute;
-    width: 52px;
-    height: 67px;
-    right: calc(26% + 5px);
-    bottom: 100px;
-  }
-
-  #home .home-icons .icon-photos3 {
-    position: absolute;
-    width: 52px;
-    height: 67px;
-    right: 0;
-    bottom: 100px;
-  }
-
-	#home .home-icons .icon-tellme {
-		position: absolute;
-		width: 51px;
-		height: 70px;
-		left: 0;
-		bottom: 0;
-	}
-	
-	#home .home-icons .icon-sessions {
-		position: absolute;
-		width: 52px;
-		height: 67px;
-		left: calc(26% + 5px);
-		bottom: 0;
-	}
-	
-	#home .home-icons .icon-2016 {
-		position: absolute;
-		width: 52px;
-		height: 67px;
-		right: 0;
-		bottom: 0;
-	}
-	
-	#home .home-icons .icon-2017 {
-		position: absolute;
-		width: 52px;
-		height: 67px;
-		right: calc(26% + 5px);
-		bottom: 0;
 	}
 }
 
@@ -292,62 +255,6 @@ header {
 		left: 45px;
 		text-align: left;
 		font-size: 12px;
-	}
-
-	#home .home-icons .icon-tellme {
-		position: absolute;
-		width: 51px;
-		height: 70px;
-		left: 0;
-		bottom: 0;
-	}
-	
-    #home .home-icons .icon-photos1 {
-    position: absolute;
-    width: 52px;
-    height: 67px;
-    left: calc(26% + 5px);
-    bottom: 100px;
-  }
-
-  #home .home-icons .icon-photos2 {
-    position: absolute;
-    width: 52px;
-    height: 67px;
-    right: calc(26% + 5px);
-    bottom: 100px;
-  }
-
-  #home .home-icons .icon-photos3 {
-    position: absolute;
-    width: 52px;
-    height: 67px;
-    right: 0;
-    bottom: 100px;
-  }
-  
-	#home .home-icons .icon-sessions {
-		position: absolute;
-		width: 52px;
-		height: 67px;
-		left: calc(26% + 5px);
-		bottom: 0;
-	}
-	
-	#home .home-icons .icon-2016 {
-		position: absolute;
-		width: 52px;
-		height: 67px;
-		right: 0;
-		bottom: 0;
-	}
-	
-	#home .home-icons .icon-2017 {
-		position: absolute;
-		width: 52px;
-		height: 67px;
-		right: calc(26% + 5px);
-		bottom: 0;
 	}
 }
 
@@ -440,7 +347,7 @@ header {
   #section-about .container .text {
     margin: 0 30px;
   }
-  
+
   #section-about .container .btn-detail {
     margin-left: 20px;
   }
@@ -584,7 +491,7 @@ header {
     margin-right: 0;
     width: 100%;
   }
-  
+
   #section-ticket .ticket:first-child {
     margin-top: 0;
   }
@@ -726,7 +633,7 @@ header {
 }
 
 #section-program .program-modal .content {
-  
+
 }
 
 #section-program .program-modal .title {
@@ -882,7 +789,7 @@ header {
   color: black;
   font-size: 18px;
   line-height: 35px;
-  font-weight: bold;  
+  font-weight: bold;
   text-align: center;
 }
 
@@ -932,7 +839,7 @@ header {
     display: flex;
     flex-flow: row wrap;
   }
-  
+
   #section-staff .staff {
     margin: calc(24px / 2) calc(20px / 2);
   }

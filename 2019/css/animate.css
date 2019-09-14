@@ -136,8 +136,8 @@ Copyright (c) 2014 Daniel Eden
 	}
 
 	50% {
-		-webkit-transform: scale3d(1.05, 1.05, 1.05);
-		transform: scale3d(1.05, 1.05, 1.05);
+		-webkit-transform: scale3d(1.03, 1.03, 1.03);
+		transform: scale3d(1.03, 1.03, 1.03);
 	}
 
 	100% {
@@ -153,8 +153,8 @@ Copyright (c) 2014 Daniel Eden
 	}
 
 	50% {
-		-webkit-transform: scale3d(1.05, 1.05, 1.05);
-		transform: scale3d(1.05, 1.05, 1.05);
+		-webkit-transform: scale3d(1.03, 1.03, 1.03);
+		transform: scale3d(1.03, 1.03, 1.03);
 	}
 
 	100% {
@@ -166,6 +166,7 @@ Copyright (c) 2014 Daniel Eden
 .pulse {
 	-webkit-animation-name: pulse;
 	animation-name: pulse;
+	animation-duration: 1.75s;
 }
 
 @-webkit-keyframes rubberBand {
