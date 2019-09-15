@@ -41,6 +41,10 @@ header {
   box-shadow: 0 0 4px 4px #FFC9B7;
 }
 
+.btn-submit:hover {
+	color: #FF33B7;
+}
+
 .btn-letswift:hover {
   background-color: black;
   color: white;
@@ -49,6 +53,13 @@ header {
 .btn-letswift.disabled {
   opacity: 0.4;
   pointer-events: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .btn-submit {
+  	border: 1px solid #FF33B7 !important;
+    box-shadow: 0 0 4px 4px #FF33B7;
+  }
 }
 
 /* home */
@@ -75,6 +86,7 @@ header {
   white-space : nowrap;
 	left: 0;
 	top: 180px;
+  color: white;
 }
 
 #home .home-title .main {
@@ -83,7 +95,6 @@ header {
 	left: 0;
 	text-align: left;
 	font-size: 55px;
-	color: white;
 }
 
 #home .home-title .sub {
@@ -93,7 +104,6 @@ header {
 	text-align: left;
 	font-size: 18px;
   font-style: bold;
-	color: white;
 }
 
 #home .home-logo img {
@@ -107,7 +117,6 @@ header {
 
 #home .home-submit {
 	position: absolute;
-
   top: 390px;
 	left: 0;
   min-width: 300px;
@@ -145,6 +154,15 @@ header {
 	right: 0;
 	bottom: 0;
   color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  #home .section {
+    background: #0800BF;
+    background: radial-gradient(circle at 60% 50%, #FF33B7 0%, #0800BF 20%, #0800BF 100%);
+  	float: left;
+  	height: 768px !important;
+  }
 }
 
 @media (max-width: 992px) {
@@ -290,7 +308,7 @@ header {
 #section-ticket {
   margin-top: 80px;
   padding-bottom: 80px;
-  background-color: #FFC9B7;
+  background-color: #FF33B7;
 }
 
 #section-ticket .flex-container {
@@ -380,6 +398,16 @@ header {
 
 #section-ticket .ticket .btn-ticket {
   font-size: 13px;
+}
+
+@media (prefers-color-scheme: dark) {
+  #section-ticket {
+    background-color: #0800BF;
+  }
+
+  #section-ticket h2 {
+    color: white;
+  }
 }
 
 @media (max-width: 992px) {
@@ -666,6 +694,28 @@ header {
   }
 }
 
+/* speakers */
+
+#section-speakers {
+  background-color: white;
+  padding-top: 50px !important;
+  padding-bottom: 80px !important;
+}
+
+#section-venue .flex-container {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+/* sponsors */
+
+#section-sponsors {
+  background-color: white;
+  padding-bottom: 80px !important;
+}
+
 /* staff */
 
 #section-staff {
@@ -687,12 +737,21 @@ header {
 }
 
 #section-staff .staff .avatar {
+  display: inline-block;
   width: 137px;
   height: 137px;
+  object-fit: cover;
+  background-position: 50%, 50%;
+  background-size: cover;
 }
 
 #section-staff .staff:hover .avatar {
   opacity: 0.8;
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
 }
 
 #section-staff .staff .name {
