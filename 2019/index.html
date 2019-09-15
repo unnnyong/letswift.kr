@@ -25,6 +25,8 @@
 
 	<link rel="stylesheet" href="css/fonts.css" type="text/css" />
 
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lt IE 9]>
@@ -35,9 +37,11 @@
 	============================================= -->
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
+
+
 	<style type="text/css">
-	a, h4 > span:not(.nocolor) {	color: #19BF2D; }
-	a:hover { color: #297e52; }
+	a, h4 > span:not(.nocolor) {	color: #FF33B7; }
+	a:hover { color: #FFC9B7; }
 	.before-heading {font-size: 22px;}
 	.emphasis-title { margin:0 0 25px; }
 	#primary-menu > ul > li:hover a, #primary-menu > ul > li.current a {
@@ -71,6 +75,7 @@
 	  ga('send', 'pageview');
 
 	</script>
+
 	<!-- Document Title
 	============================================= -->
 	<title>Let'Swift : 스위프트 컨퍼런스</title>
@@ -78,6 +83,11 @@
 </head>
 
 <body class="stretched">
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+ 	</script>
 
 	<!-- Document Wrapper
 	============================================= -->
@@ -108,6 +118,7 @@
 							<li><a href="#" data-href="#section-about"><div>About</div></a></li>
 							<li><a href="#" data-href="#section-ticket"><div>Ticket</div></a></li>
 							<li><a href="#" data-href="#section-program"><div>Program</div></a></li>
+							<li><a href="#" data-href="#section-speakers"><div>Speakers</div></a></li>
 							<li><a href="#" data-href="#section-sponsors"><div>Sponsors</div></a></li>
 							<li><a href="#" data-href="#section-staff"><div>Staff</div></a></li>
 							<li><a href="#" data-href="#section-venue"><div>Venue</div></a></li>
@@ -127,7 +138,7 @@
 
 			<div class="section swiper_wrapper nopadding nomargin noborder ohidden">
 				<div class="container center one-page-menu">
-					<div class="home-title">
+					<div class="home-title" data-aos="fade-in" data-aos-duration="1100">
 						<div class="main">
 							<strong>Let`Swift 2019</strong>
 						</div>
@@ -136,15 +147,15 @@
 						</div>
 					</div>
 
-					<div class="home-logo animated infinite slower pulse">
+					<div class="home-logo animated infinite slower pulse" data-aos="zoom-out" data-aos-duration="1500">
 						<img src="images/header2_swift_logo.png">
 					</div>
 
-					<div class="home-submit">
+					<div class="home-submit" data-aos="fade-in" data-aos-duration="1100">
 						<a class="btn-submit" href="https://docs.google.com/forms/d/e/1FAIpQLSdlgt_s1ndA4ZFwjnLg9sbDa7RmRLH7B9zWFnQhpTAHmHfwYg/viewform?fbclid=IwAR3GDPIH57ek8roTnVwfXvNmJCoiHDrQJzYBTmzLqnGu38WrLEYVtjhwr8s" target="_blank">발표자 신청하기</a>
 					</div>
 
-					<div class="home-past">
+					<div class="home-past" data-aos="fade-in" data-aos-duration="1100">
 						<a href="../2016/index.html" target="_blank" class="icon-2016"><strong>2016</strong></a>
 						<a href="../2017/index.html" target="_blank" class="icon-2017"><strong>2017</strong></a>
 						<a href="../2018/index.html" target="_blank" class="icon-2018"><strong>2018</strong></a>
@@ -166,10 +177,6 @@
 							<div class="image animated infinite slower swing">
 								<img src="images/about_bar_image.png">
 							</div>
-							<!-- <div class="home-logo animated infinite slower pulse">
-								<img src="images/header2_swift_logo.png">
-							</div> -->
-
 							<div class="text">
 								<div>
 									<h3>도전하는 Swift 개발자들끼리 만나고, 배우고, 즐기는 컨퍼런스
@@ -780,6 +787,13 @@
 					</div>
 				</div>
 
+				<div id="section-speakers" class="page-section">
+					<div class="container clearfix">
+						<h2>SPEAKERS</h2>
+						<div class="flex-container">
+					</div>
+				</div>
+
 				<div id="section-sponsors" class="page-section">
 					<div class="container clearfix">
 						<h2>SPONSORS</h2>
@@ -824,85 +838,17 @@
 								<img class="avatar" src="images/staff/김정.png">
 								<div class="name">김정</div>
 							</div>
-
-							<div class="staff">
-								<img class="avatar" src="images/staff/이승윤.png">
-								<div class="name">이승윤</div>
-							</div>
-
-							<div class="staff">
-								<img class="avatar" src="images/staff/전수열.png">
-								<div class="name">전수열</div>
-							</div>
-
-							<div class="staff">
-								<img class="avatar" src="images/staff/강현정.png">
-								<div class="name">강현정</div>
-							</div>
-
 							<div class="staff">
 								<img class="avatar" src="images/staff/구범모.png">
 								<div class="name">구범모</div>
 							</div>
-
 							<div class="staff">
 								<img class="avatar" src="images/staff/김은영.png">
 								<div class="name">김은영</div>
 							</div>
-
 							<div class="staff">
 								<img class="avatar" src="images/staff/손창우.png">
 								<div class="name">손창우</div>
-							</div>
-
-							<div class="staff">
-								<img class="avatar" src="images/staff/윤중현.png">
-								<div class="name">윤중현</div>
-							</div>
-
-							<div class="staff">
-								<img class="avatar" src="images/staff/이규진.png">
-								<div class="name">이규진</div>
-							</div>
-
-							<div class="staff">
-								<img class="avatar" src="images/staff/이동진.png">
-								<div class="name">이동진</div>
-							</div>
-
-							<div class="staff">
-								<img class="avatar" src="images/staff/이재성.png">
-								<div class="name">이재성</div>
-							</div>
-
-							<div class="staff">
-								<img class="avatar" src="images/staff/이태현.png">
-								<div class="name">이태현</div>
-							</div>
-
-							<div class="staff">
-								<img class="avatar" src="images/staff/정상엽.png">
-								<div class="name">정상엽</div>
-							</div>
-
-							<div class="staff">
-								<img class="avatar" src="images/staff/정현아.png">
-								<div class="name">정현아</div>
-							</div>
-
-							<div class="staff">
-								<img class="avatar" src="images/staff/조성현.png">
-								<div class="name">조성현</div>
-							</div>
-
-							<div class="staff">
-								<img class="avatar" src="images/staff/최송이.png">
-								<div class="name">최송이</div>
-							</div>
-
-							<div class="staff">
-								<img class="avatar" src="images/staff/하태경.png">
-								<div class="name">하태경</div>
 							</div>
 						</div>
 
