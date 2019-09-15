@@ -283,6 +283,7 @@ Copyright (c) 2014 Daniel Eden
 }
 
 .shake {
+	animation-duration: 6s;
 	-webkit-animation-name: shake;
 	animation-name: shake;
 }
