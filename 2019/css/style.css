@@ -160,8 +160,8 @@ header {
 
 @media (prefers-color-scheme: dark) {
   #home .section {
-    background: #0800BF;
-    background: radial-gradient(circle at 60% 50%, #FF33B7 0%, #0800BF 20%, #0800BF 100%);
+    background: #080048;
+    background: radial-gradient(circle at 60% 50%, #FF33B7 0%, #080048 20%, #080048 100%);
   	float: left;
   	height: 768px !important;
   }
@@ -203,8 +203,8 @@ header {
 
 @media (max-width: 767px) and (prefers-color-scheme: dark) {
   #home .section {
-    background: #0800BF;
-    background: radial-gradient(circle at 50% 30%, #FF33B7 0%, #0800BF 20%, #0800BF 100%);
+    background: #080048;
+    background: radial-gradient(circle at 50% 30%, #FF33B7 0%, #080048 20%, #080048 100%);
   	float: left;
   	height: 768px !important;
   }
@@ -325,13 +325,13 @@ header {
   text-align: center;
   font-size: 40px;
   justify-content: center;
-  background-color: #0800BF;
+  background-color: #080048;
   color: white;
 }
 
 @media (prefers-color-scheme: dark) {
   #section-ticket {
-    background-color: #0800BF;
+    background-color: #080048;
   }
 
   #section-ticket .description {
@@ -993,7 +993,7 @@ footer .copyright {
 
 @media (prefers-color-scheme: dark) {
   footer {
-    background-color: #0800BF;
+    background-color: #080048;
   }
 }
 
