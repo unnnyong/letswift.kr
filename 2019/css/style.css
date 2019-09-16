@@ -321,15 +321,6 @@ header {
   background-color: #FF33B7;
 }
 
-/* #section-ticket .flex-container {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-  padding-bottom: 80px;
-  padding-left: 55px;
-  padding-right: 55px;
-} */
-
 #section-ticket .description {
   /* align-items: center; */
   text-align: center;
@@ -338,86 +329,6 @@ header {
   /* flex-grow: 1; */
   background-color: #FF33B7;
   color: white;
-}
-
-#section-ticket .ticket {
-  margin-right: 92px;
-  border: 3px solid black;
-  padding: 33px;
-  width: 100px;
-  flex-grow: 1;
-  background-color: white;
-  color: black;
-}
-
-#section-ticket .ticket:last-child {
-  margin-right: 0;
-}
-
-#section-ticket .ticket .ticket-name {
-  text-align: left;
-}
-
-#section-ticket .ticket .ticket-name h3 {
-  margin-bottom: 0;
-  color: black;
-  font-weight: 600;
-  font-size: 25px;
-}
-
-#section-ticket .ticket .ticket-name h3 span {
-  color: #19BF2D;
-}
-
-#section-ticket .ticket .ticket-content {
-  text-align: center;
-}
-
-#section-ticket .ticket .includes {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-
-#section-ticket .ticket .includes .item {
-  margin-right: 40px;
-  flex-shrink: 0;
-  text-align: center;
-}
-
-#section-ticket .ticket .includes .item:last-child {
-  margin-right: 0;
-}
-
-#section-ticket .ticket .includes .item .icon-wrap {
-  height: 65px;
-  display: block;
-}
-
-#section-ticket .ticket .includes .item .icon-wrap img {
-  margin: auto 0;
-}
-
-#section-ticket .ticket .includes .item span {
-  margin-top: 6px;
-  font-size: 15px;
-}
-#section-ticket .ticket .includes .item span.workshop {
-  color: #19BF2D;
-}
-
-#section-ticket .ticket .price {
-  font-size: 16px;
-}
-
-#section-ticket .ticket .info {
-  margin: 40px 0;
-  font-size: 14px;
-}
-
-#section-ticket .ticket .btn-ticket {
-  font-size: 13px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -445,16 +356,6 @@ header {
   #section-ticket .flex-container {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  #section-ticket .ticket {
-    margin-top: 30px;
-    margin-right: 0;
-    width: 100%;
-  }
-
-  #section-ticket .ticket:first-child {
-    margin-top: 0;
   }
 }
 
