@@ -958,12 +958,12 @@ body.stretched #header.full-header .container {
 
 @media (prefers-color-scheme: dark) {
 	#header {
-		background-color: #0800BF;
-		border-bottom: 1px solid #0800BF;
+		background-color: #080048;
+		border-bottom: 1px solid #080048;
 	}
 
 	#header.transparent-header {
-		background-color: #0800BF;
+		background-color: #080048;
 	}
 }
 
@@ -1991,7 +1991,7 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 
 @media (prefers-color-scheme: dark) {
 	#header.sticky-header #header-wrap {
-		background-color: #0800BF;
+		background-color: #080048;
 	}
 }
 
