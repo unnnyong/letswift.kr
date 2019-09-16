@@ -321,13 +321,23 @@ header {
   background-color: #FF33B7;
 }
 
-#section-ticket .flex-container {
+/* #section-ticket .flex-container {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
   padding-bottom: 80px;
   padding-left: 55px;
   padding-right: 55px;
+} */
+
+#section-ticket .description {
+  /* align-items: center; */
+  text-align: center;
+  font-size: 40px;
+  justify-content: center;
+  /* flex-grow: 1; */
+  background-color: #FF33B7;
+  color: white;
 }
 
 #section-ticket .ticket {
