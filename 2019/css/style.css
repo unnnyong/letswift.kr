@@ -636,6 +636,21 @@ header {
   margin: calc(50px / 2) calc(64px / 2);
 }
 
+/* 발표자 공개되면 삭제 */
+#section-speakers .speaker .submit {
+  margin-top: 1px;
+  width: 100%;
+  color: black;
+  font-size: 17px;
+  font-weight: 800;
+  text-align: left;
+}
+
+#section-speakers .speaker .submit:hover {
+  color: #ff39b7;
+}
+/* 발표자 공개되면 삭제 */
+
 /* #section-speakers .speaker:hover {
   animation: pulse 1s;
   animation-iteration-count: 1;
@@ -671,19 +686,6 @@ header {
   font-size: 17px;
   font-weight: 400;
   text-align: left;
-}
-
-#section-speakers .speaker .submit {
-  margin-top: 1px;
-  width: 100%;
-  color: black;
-  font-size: 17px;
-  font-weight: 800;
-  text-align: left;
-}
-
-#section-speakers .speaker .submit:hover {
-  color: #ff39b7;
 }
 
 #section-speakers .speaker .description {
@@ -784,6 +786,15 @@ header {
   background-color: #EFEFEF;
   padding-top: 50px !important;
   padding-bottom: 80px !important;
+}
+
+#section-staff .description {
+  margin-top: 1px;
+  width: 100%;
+  color: black;
+  font-size: 17px;
+  font-weight: 800;
+  text-align: left;
 }
 
 #section-staff .flex-container {
