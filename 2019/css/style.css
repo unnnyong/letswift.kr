@@ -725,10 +725,10 @@ header {
   margin: calc(50px / 2) calc(64px / 2);
 }
 
-#section-speakers .speaker:hover {
+/* #section-speakers .speaker:hover {
   animation: pulse 1s;
   animation-iteration-count: 1;
-}
+} */
 
 #section-speakers .speaker .box {
   width: 237px;
@@ -756,11 +756,23 @@ header {
 #section-speakers .speaker .session-name {
   margin-top: 1px;
   width: 100%;
-  background-color: white;
   color: #ff39b7;
   font-size: 17px;
   font-weight: 400;
   text-align: left;
+}
+
+#section-speakers .speaker .submit {
+  margin-top: 1px;
+  width: 100%;
+  color: black;
+  font-size: 17px;
+  font-weight: 800;
+  text-align: left;
+}
+
+#section-speakers .speaker .submit:hover {
+  color: #ff39b7;
 }
 
 #section-speakers .speaker .description {
@@ -854,24 +866,6 @@ header {
 #section-sponsors .sponsor .image:hover {
   opacity: 0.6;
 }
-
-/* #section-ticket .flex-container {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-  padding-bottom: 80px;
-  padding-left: 55px;
-  padding-right: 55px;
-} */
-
-
-
-/* #section-speakers .flex-container {
-  margin: auto;
-  margin: calc(-50px / 2) calc(-64px / 2);
-  display: flex;
-  flex-flow: row wrap;
-} */
 
 /* staff */
 
