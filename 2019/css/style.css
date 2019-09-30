@@ -36,16 +36,16 @@ header {
   border-radius: 100px;
   line-height: 20px;
 	font-weight: 500;
-	color: black;
+	color: gray;
   width: 100%;
   background-color: white;
   padding: 10px 45px;
   box-shadow: 0 0 4px 4px #FFC9B7;
 }
 
-.btn-submit:hover {
+/* .btn-submit:hover {
 	color: #FF33B7;
-}
+} */
 
 .btn-letswift:hover {
   background-color: black;
@@ -646,10 +646,6 @@ header {
   font-size: 17px;
   font-weight: 800;
   text-align: left;
-}
-
-#section-speakers .speaker .submit:hover {
-  color: #ff39b7;
 }
 /* 발표자 공개되면 삭제 */
 
