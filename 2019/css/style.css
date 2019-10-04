@@ -382,6 +382,87 @@ header {
 
 /* program */
 
+#section-program .program-table {
+  border: none;
+  border-collapse: separate;
+  border-spacing: 15px 10px;
+  width: 100%;
+}
+
+#section-program .program-table .header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+
+#section-program .program-table .header-subscription {
+  padding-bottom: 15px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 13px;
+  color: gray;
+}
+
+#section-program .program-table td.register {
+  background-color: #ff39b7;
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  color: white;
+}
+
+#section-program .program-table td.lunch {
+  background-color: #ffc9b7;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+#section-program .program-table td.time {
+  width: 4.5%;
+  height: 28px;
+  position: relative;
+}
+
+#section-program .program-table td.time:not(:empty) {
+  color: #151515;
+  font-size: 15px;
+  font-weight: bold;
+  border-top: 3px solid #151515;
+}
+
+#section-program .program-table td.program {
+  padding-top: 3px;
+  vertical-align: text-top;
+  width: 18%;
+}
+
+#section-program .program-table td.program:not(:empty) {
+  border-top: 3px solid #ff39b7;
+}
+
+#section-program .program-table td.program span {
+  font-weight: normal;
+  font-size: 14px;
+  color: black;
+  display: block;
+}
+
+#section-program .program-table td.program .keynote {
+  font-weight: bold;
+  color: #ff39b7;
+}
+
+#section-program .program-table td.program .time {
+  font-weight: bold;
+}
+
+#section-program .program-table td.program .speaker {
+  color: #7c7c7c;
+}
+
 #section-program .table-program {
   border: none;
   border-collapse: separate;
