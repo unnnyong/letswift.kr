@@ -448,19 +448,50 @@ header {
   font-size: 14px;
   color: black;
   display: block;
+  word-break: break-all;
 }
 
 #section-program .program-table td.program .keynote {
   font-weight: bold;
   color: #ff39b7;
 }
-
 #section-program .program-table td.program .time {
   font-weight: bold;
 }
 
 #section-program .program-table td.program .speaker {
   color: #7c7c7c;
+}
+
+@media (max-width: 767px) {
+  #section-program .program-table .header {
+    word-break: break-all;
+    font-size: 15px;
+  }
+
+  #section-program .program-table td.program {
+    width: 18%;
+    min-width: 80px;
+  }
+}
+
+@media (max-width: 479px) {
+  #section-program .program-table {
+    border-collapse: separate;
+    border-spacing: 13px 5px;
+    width: calc(100% + 40px);
+    margin: 0 -20px;
+  }
+
+  #section-program .program-table .header {
+    word-break: break-all;
+    font-size: 20px;
+  }
+
+  #section-program .program-table td.program {
+    width: 18%;
+    min-width: 50px;
+  }
 }
 
 #section-program .table-program {
