@@ -512,22 +512,6 @@ header {
   margin: calc(50px / 2) calc(64px / 2);
 }
 
-/* 발표자 공개되면 삭제 */
-#section-speakers .speaker .submit {
-  margin-top: 1px;
-  width: 100%;
-  color: black;
-  font-size: 17px;
-  font-weight: 800;
-  text-align: left;
-}
-/* 발표자 공개되면 삭제 */
-
-/* #section-speakers .speaker:hover {
-  animation: pulse 1s;
-  animation-iteration-count: 1;
-} */
-
 #section-speakers .speaker .box {
   width: 237px;
   height: 4px;
@@ -553,11 +537,12 @@ header {
 
 #section-speakers .speaker .session-name {
   margin-top: 1px;
-  width: 100%;
+  width: 237px;
   color: #ff39b7;
   font-size: 17px;
   font-weight: 400;
   text-align: left;
+  word-break: break-all;
 }
 
 #section-speakers .speaker .description {
@@ -566,7 +551,7 @@ header {
   background-color: white;
   color: black;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 20px;
   font-weight: normal;
   text-align: justify;
 }
