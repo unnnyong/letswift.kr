@@ -382,10 +382,15 @@ header {
 
 /* program */
 
+#section-program .description {
+  font-size: 12px;
+  line-height: 20px;
+}
+
 #section-program .program-table {
   border: none;
   border-collapse: separate;
-  border-spacing: 15px 10px;
+  border-spacing: 25px 10px;
   width: 100%;
 }
 
@@ -410,14 +415,6 @@ header {
   font-weight: normal;
   font-size: 14px;
   color: white;
-}
-
-#section-program .program-table td.lunch {
-  background-color: #ffc9b7;
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-  color: black;
 }
 
 #section-program .program-table td.time {
@@ -491,241 +488,6 @@ header {
   #section-program .program-table td.program {
     width: 18%;
     min-width: 50px;
-  }
-}
-
-#section-program .table-program {
-  border: none;
-  border-collapse: separate;
-  border-spacing: 32px 0;
-  width: calc(100% + 64px);
-  margin: 0 -32px;
-}
-
-#section-program .table-program td {
-  height: 15px;
-}
-
-#section-program .table-program th:not(:empty) {
-  padding: 14px 19px;
-  background-color: #151515;
-  color: white;
-  font-size: 15px;
-  font-weight: bold;
-}
-
-#section-program .table-program td {
-  vertical-align: top;
-}
-
-#section-program .table-program td.session:not(:empty),
-#section-program .table-program td.workshop:not(:empty) {
-  padding: 12px 19px;
-  background-color: #EFEFEF;
-  color: black;
-  font-size: 15px;
-  width: 42%;
-}
-
-/*#section-program .table-program td.session:not(:empty):not(.reserved),
-#section-program .table-program td.workshop:not(:empty):not(.reserved) {
-  cursor: pointer;
-}
-*/
-#section-program .table-program td.session.reserved {
-  background-color: #90DD22;
-}
-
-#section-program .table-program td.session .time {
-  display: block;
-  font-weight: bold;
-}
-#section-program .table-program td.session .speaker {
-  float: right;
-}
-
-#section-program .table-program td.workshop .time {
-  display: block;
-  font-weight: bold;
-}
-#section-program .table-program td.workshop .title {
-  display: block;
-}
-#section-program .table-program td.workshop .speaker {
-  display: block;
-}
-
-#section-program .table-program td.time {
-  position: relative;
-}
-#section-program .table-program td.time span {
-  position: absolute;
-  top: 16px;
-}
-#section-program .table-program td.time:not(:empty) {
-  line-height: 0;
-  color: #151515;
-  font-size: 15px;
-  font-weight: bold;
-  border-top: 4px solid #151515;
-}
-
-#section-program .table-program td.session .links,
-#section-program .table-program td.workshop .links {
-  margin-top: 10px;
-  list-style: none;
-}
-
-#section-program .table-program td.session .links li:not(:last-child)::after,
-#section-program .table-program td.workshop .links li:not(:last-child)::after {
-  content: "\00a0/\00a0";
-}
-
-#section-program .table-program td.session .links li,
-#section-program .table-program td.workshop .links li {
-  float: left;
-}
-
-#section-program .program-modal {
-  position: fixed;
-  top: 100px;
-  left: 10%;
-  right: 10%;
-  text-align: left;
-  padding: 45px;
-  background-color: white;
-  border: 1.5px solid black;
-  cursor: pointer;
-  display: flex;
-  align-items: flex-end;
-  z-index: 50;
-}
-
-#section-program .program-modal .avatar {
-  width: 275px;
-  height: 275px;
-  margin-right: 45px;
-  object-fit: cover;
-}
-
-#section-program .program-modal .content {
-
-}
-
-#section-program .program-modal .title {
-  margin-bottom: 17px;
-  font-weight: bold;
-  font-size: 19px;
-  color: #19BF2D;
-}
-
-#section-program .program-modal .name::before {
-  content: '@';
-}
-
-#section-program .program-modal .name {
-  margin-bottom: 17px;
-  font-size: 16px;
-  color: #535353;
-}
-
-#section-program .program-modal .description {
-  margin-bottom: 0;
-  font-size: 18px;
-  color: black;
-}
-
-@media (max-width: 992px) {
-  #section-program .table-program {
-    border-collapse: separate;
-    border-spacing: 20px 0;
-    width: calc(100% + 40px);
-    margin: 0 -20px;
-  }
-
-  #section-program .program-modal {
-    padding: 30px 60px;
-  }
-}
-
-@media (max-width: 767px) {
-  #section-program .table-program {
-    border-collapse: separate;
-    border-spacing: 16px 0;
-    width: calc(100% + 32px);
-    margin: 0 -16px;
-  }
-
-  #section-program .table-program td.session:not(:empty) {
-    position: relative;
-    padding-bottom: 60px !important;
-  }
-
-  #section-program .table-program td.session .speaker {
-    position: absolute;
-    left: 19px;
-    bottom: 19px;
-  }
-
-  #section-program .table-program td.workshop .speaker {
-    margin-top: 15px;
-  }
-
-  #section-program .program-modal {
-    flex-flow: row wrap;
-  }
-
-  #section-program .program-modal .avatar {
-    width: 200px;
-    height: 200px;
-  }
-
-  #section-program .program-modal .title {
-    margin-top: 30px;
-  }
-}
-
-@media (max-width: 479px) {
-  #section-program .table-program {
-    border-collapse: separate;
-    border-spacing: 10px 0;
-    width: calc(100% + 20px);
-    margin: 0 -10px;
-  }
-
-  #section-program .table-program td {
-    height: 10px;
-  }
-
-  #section-program .table-program th:not(:empty) {
-    padding: 5px 10px;
-  }
-
-  #section-program .table-program td.session:not(:empty),
-  #section-program .table-program td.workshop:not(:empty) {
-    padding: 8px 10px;
-  }
-
-  #section-program .table-program td.session .speaker {
-    position: absolute;
-    left: 10px;
-    bottom: 8px;
-  }
-
-  #section-program .program-modal {
-    padding: 30px;
-  }
-
-  #section-program .program-modal .avatar {
-    display: none;
-  }
-
-  #section-program .program-modal .title {
-    margin-top: 0;
-  }
-
-  #section-program .program-modal .name {
-    display: none;
   }
 }
 
