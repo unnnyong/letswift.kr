@@ -519,7 +519,9 @@ header {
 #section-speakers .speaker .photo {
   flex: auto;
   object-fit: cover;
+  object-position: center;
   border-radius: 50%;
+  width: 100%;
 }
 
 #section-speakers .speaker .name {
@@ -532,7 +534,7 @@ header {
 }
 
 #section-speakers .speaker .session-name {
-  margin-top: 1px;
+  margin-top: 3px;
   color: #ff39b7;
   font-size: 16px;
   font-weight: 400;
