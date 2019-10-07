@@ -751,7 +751,7 @@ header {
 
 /* venue */
 
-#section-venue .flex-container {
+#section-venue .venue-flex-containe {
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -803,8 +803,7 @@ header {
 
 footer {
   background-color: #ff39b7;
-  margin-top: 160px;
-  height: 60px;
+  height: 140px;
   color: white;
   font-size: 13px;
 }
