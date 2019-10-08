@@ -343,6 +343,13 @@ header {
   }
 }
 
+
+@media (prefers-color-scheme: light) {
+  #section-ticket h3 {
+    color: white;
+  }
+}
+
 @media (max-width: 992px) {
   #section-ticket .flex-container {
     padding-left: 20px;
