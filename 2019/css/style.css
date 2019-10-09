@@ -382,6 +382,16 @@ header {
   line-height: 20px;
 }
 
+#section-program .level {
+  padding-left: 3px;
+  padding-right: 3px;
+  display: inline-block;
+  width: 18px;
+  color: white;
+  font-size: 13px;
+  background-color: #ff39b7;
+}
+
 #section-program .program-table {
   border: none;
   border-collapse: separate;
