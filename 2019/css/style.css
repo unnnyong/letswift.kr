@@ -324,31 +324,17 @@ header {
 }
 
 #section-ticket .description {
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   justify-content: center;
-  background-color: #080048;
-  color: white;
+  background-color: white;
 }
 
 @media (prefers-color-scheme: dark) {
   #section-ticket {
     background-color: #080048;
-  }
-
-  #section-ticket .description {
-    background-color: #FF33B7;
-  }
-
-  #section-ticket h2 {
-    color: white;
-  }
-}
-
-
-@media (prefers-color-scheme: light) {
-  #section-ticket h3 {
-    color: white;
   }
 }
 
