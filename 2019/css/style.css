@@ -467,8 +467,19 @@ header {
 }
 
 #section-program .program-table td.program .speaker {
+  float: none;
   padding: 0;
   color: #7c7c7c;
+}
+
+#section-program .program-table td.program .level {
+  padding-left: 3px;
+  padding-right: 3px;
+  display: inline-block;
+  width: 18px;
+  color: white;
+  font-size: 13px;
+  background-color: #ff39b7;
 }
 
 @media (max-width: 767px) {
